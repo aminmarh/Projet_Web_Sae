@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+span{
+    color:#009688;
+}
+
+body {
+    height: 100%;
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 10%;
+}
+header .logo {
+    color:#fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    text-decoration: 0;
+    color:rgb(0, 0, 0);
+    position: relative;
+}
+header ul li a::before{
+    position: absolute;
+    bottom: 0;
+    content:'';
+    height:3px;
+    width: 0;
+    background-color: #009688;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+header ul li a:hover::before {
+    width: 100%;
+}
+    
+/*responsive*/
+
+@media (max-width:760px) {
+    header ul {
+        display: none;
+    }
+    .responsive_menu {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+    }
+    .responsive_menu::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        transform: translateY(-5px);
+        height: 5px;
+        background-color: #fff;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+    .responsive_menu.active::before {
+        transform: rotate(45deg) ;
+        width: 28px;
+    }
+    .responsive_menu::after {
+        content: "";
+        position: absolute;
+        width: 28px;
+        transform: translateY(5px);
+        height: 5px;
+        background-color: #fff;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+    .responsive_menu.active::after{
+        transform: rotate(-45deg) ;
+    }  
+    header .menu.responsive {
+        display:flex ;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(100px);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .menu.responsive li {
+        margin: 25px;
+    }
+}
+
+section#contact{
+    background-color: #f9f9fb;
+    padding: 100px 15px;
+}
+
+section#contact .container{
+    max-width: 900px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 60px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: rgb(214 214 214) 0px 10px 50px -10px;
+}
+
+section#contact .container .title{
+    text-align: center;
+    color: #2a2a2a;
+    margin-bottom: 60px;
+}
+
+section#contact .container .title h6{
+    font-size: 1.2em;
+}
+
+section#contact .container .title h3{
+    font-size: 2.8em;
+}
+
+section#contact .container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+section#contact .container form input{
+    width: 45%;
+
+}
+
+section#contact .container form input:hover,
+section#contact .container form textarea:hover{
+    border-bottom: 2px solid #1fb3bf;
+
+}
+
+section#contact .container form input,
+section#contact .container form textarea{
+    margin: 15px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4ec;
+    transition: 0.2s;
+}
+
+
+section#contact .container form textarea{
+    width: 100%;
+    resize: none;
+    height: 200px;
+    margin-top: 60px;
+}
+
+section#contact .container form button{
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1fb3bf;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+    
+}
+
+section#contact .container form button:hover{
+    transform: translateY(-5px);
+    box-shadow: rgb(214 214 214) 0px 10px 40px -5px;
+}
+
+@media screen and (max-width: 500px) {
+    section#contact .container form{
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 600px; */
+        flex-direction: column;
+        width: 95%;
+    }
+
+    section#contact .container form input{
+        width: 100%;
+    }
+
+    section#contact .container .title h6{
+        font-size: 1em;
+    }
+    
+    section#contact .container .title h3{
+        font-size: 2em;
+    }
+    
+}
