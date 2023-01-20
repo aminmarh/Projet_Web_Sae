@@ -75,7 +75,7 @@ header ul li a:hover::before {
         width: 50px;
         transform: translateY(-5px);
         height: 5px;
-        background-color: #fff;
+        background-color: rgb(0, 0, 0);
         border-radius: 6px;
         transition: 0.5s;
     }
@@ -89,7 +89,7 @@ header ul li a:hover::before {
         width: 28px;
         transform: translateY(5px);
         height: 5px;
-        background-color: #fff;
+        background-color: rgb(0, 0, 0);
         border-radius: 6px;
         transition: 0.5s;
     }
@@ -208,10 +208,6 @@ section#contact .container form button:hover{
 
 @media screen and (max-width: 500px) {
     section#contact .container form{
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 600px; */
         flex-direction: column;
         width: 95%;
     }
@@ -229,3 +225,57 @@ section#contact .container form button:hover{
     }
     
 }
+
+section#facts{
+    background: #f9f9fb;
+    padding: 0 10px 25px;
+
+}
+
+section#facts .container{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px -15px #e6e6e6;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    top: 0px;
+    transition: 0.2s;
+}
+
+section#facts .container:hover{
+    background-color: #2a2a2a;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+
+section#facts .container > p{
+    font-size: 1.1em;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 500;
+    color: #212121;
+    transition: 0.2s;
+}
+
+section#facts .container:hover p{
+    transition: 0.2s;
+}
+
+section#facts .container:hover p,
+section#facts .container:hover .person{
+    color: white !important;
+}
+
+section#facts .container .person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end ;
+    margin-top: 25px;
+}
+
+
+
