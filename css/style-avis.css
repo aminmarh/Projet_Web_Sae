@@ -14,32 +14,32 @@ body {
     position: relative;
 }
 
-header {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
     padding: 0 10%;
 }
-header .logo {
+nav .logo {
     color:#fff;
     font-size: 35px;
     font-weight: bold;
 }
-header ul{
+nav ul{
     display: flex;
     list-style: none;
 }
-header ul li {
+nav ul li {
     margin: 0 10px;
 }
 
-header ul li a {
+nav ul li a {
     text-decoration: 0;
     color:rgb(0, 0, 0);
     position: relative;
 }
-header ul li a::before{
+nav ul li a::before{
     position: absolute;
     bottom: 0;
     content:'';
@@ -49,14 +49,14 @@ header ul li a::before{
     border-radius: 6px;
     transition: 0.5s;
 }
-header ul li a:hover::before {
+nav ul li a:hover::before {
     width: 100%;
 }
     
 /*responsive*/
 
 @media (max-width:760px) {
-    header ul {
+    nav ul {
         display: none;
     }
     .responsive_menu {
@@ -96,7 +96,7 @@ header ul li a:hover::before {
     .responsive_menu.active::after{
         transform: rotate(-45deg) ;
     }  
-    header .menu.responsive {
+    nav .menu.responsive {
         display:flex ;
         position: absolute;
         top: 0;

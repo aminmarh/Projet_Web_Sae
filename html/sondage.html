@@ -13,7 +13,7 @@
         <script src="../js/script.js"></script>
     </head>
     <body>
-        <header>
+        <nav>
             <div class="logo">
                 <p><span>SONDAGE</spanx/p>
             </div>
@@ -24,6 +24,56 @@
                 <li><a href="sondage.html">SONDAGE</a></li>
                 <li><a href="avis.php">AVIS</a></li>
             </ul>
-        </header> 
+        </nav> 
+        <header>
+            <h1>Sondage</h1>
+            <p>
+                Cette enquête est remise à chaque élève. Ce sondage vous permet de voir les aliments préférés de vos élèves. 
+                Pour cela, il y a la première partie sur le statut d'étudiant, puis la nourriture préfère au petit déjeuner et les aliments préfèrent au repas du soir.
+            </p>
+        </header>
+        <section class="identite">
+            <div class="content">
+
+                <h1>Les informations personnelles</h1>
+
+                <p class="ligne">Civilité
+                    <input type="radio" name="civilite" id="civilite_m" value="m" /><label for="civilite_m"><abbr title="Monsieur">M.</abbr></label>
+                    <input type="radio" name="civilite" id="civilite_mme" value="mme" /><label for="civilite_mme"><abbr title="Madame">Mme</abbr></label>
+                    <input type="radio" name="civilite" id="civilite_mlle" value="mlle" /><label for="civilite_mlle"><abbr title="Mademoiselle">Mlle</abbr></label>
+                </p>
+
+    
+                <p class="saisie"><label for="nom">Nom*</label>
+                    <input type="text" name="nom" id="nom" />
+                </p>
+
+                <p class="saisie"><label for="prenom">Prénom*</label>
+                    <input type="text" name="prenom" id="prenom"/>
+                </p>
+
+                <p class="saisie"><label for="email">Email*</label>
+                    <input type="text" name="email" id="email" value=""/>
+                </p>
+
+                <p class="saisie"><label for="num"><abbr title="Numéro">N° Téléphone</abbr></label>
+                    <input type="text" name="num" id="num" />
+                </p>
+
+                <label for="niveau_classe">Votre classe :</label>
+
+                <select name="niveau" id="niveau_classe">
+                    <option value=""></option>
+                    <option value="6e">6e</option>
+                    <option value="5e">5e</option>
+                    <option value="4e">4e</option>
+                    <option value="3e">3e</option>
+                    <option value="2nd">2nd</option>
+                    <option value="1er">1er</option>
+                    <option value="Terminale">Terminale</option>
+                </select>
+
+            </div>
+        </section>
     </body>
 </html>

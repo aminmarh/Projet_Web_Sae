@@ -14,7 +14,7 @@
         <script src="../js/script.js"></script>
     </head>
     <body>
-        <header>
+        <nav>
             <div class="logo">
                 <p><span>Avis</spanx/p>
             </div>
@@ -23,7 +23,7 @@
                 <li><a href="sondage.html">SONDAGE</a></li>
                 <li><a href="avis.php">AVIS</a></li>
             </ul>
-        </header> 
+        </nav> 
         <section id="contact">
             <div class="container">
                 <div class="title">
