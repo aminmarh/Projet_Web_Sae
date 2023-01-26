@@ -12,6 +12,7 @@ span{
 body {
     height: 100%;
     position: relative;
+    background-color: #f9f9fb;
 }
 
 nav {
@@ -207,4 +208,276 @@ header p {
     .menu.responsive li {
         margin: 25px;
     }
+}
+
+/* -------------------------------------
+Formulaire sondage
+------------------------------------- */
+
+/* .civilite{
+    text-align: center;
+} */
+
+section#identite{
+    background-color: #f9f9fb;
+    padding: 50px 15px;
+}
+
+section#identite h1{
+    /* text-align :center; */
+    padding-left: 60px;
+    color: #2a2a2a;
+    margin-bottom: 60px;
+    font-size: 2.8em;
+}
+
+section#identite .container {
+    max-width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 60px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: rgb(214 214 214) 0px 10px 50px -10px;
+}
+
+section#identite .container .title{
+    text-align: center;
+    color: #2a2a2a;
+    margin-bottom: 60px;
+}
+
+section#identite .container .title1{
+    margin-right: 80%;
+    text-align: center;
+    color: #2a2a2a;
+    margin-bottom: 60px;
+}
+
+section#identite .container .title1 input{
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e4e4ec;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+section#identite .container .title .civilite{
+    margin-top: 25px;
+}
+
+section#identite .container .fform{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#identite .container .fform input,
+section#identite .container .fform .niveau_classe
+{
+    width: 45%;
+}
+
+section#identite .container .fform .niveau_classe:hover,
+section#identite .container .fform input:hover{
+    border-bottom: 2px solid #10cb58;
+}
+
+section#identite .container .fform input,
+section#identite .container .fform .niveau_classe
+{
+    margin: 15px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4ec;
+    transition: 0.2s;
+}
+
+section#identite .container .fform .alm{
+    margin: 15px 0;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4ec;
+    transition: 0.2s;
+}
+
+/* ----------------------------------------------------- */
+
+section#ptitdej{
+    background-color: #f9f9fb;
+    padding: 50px 15px;
+}
+
+section#ptitdej h1{
+    /* text-align :center; */
+    padding-left: 60px;
+    color: #2a2a2a;
+    margin-bottom: 60px;
+    font-size: 2.8em;
+}
+
+section#ptitdej .container {
+    max-width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 60px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: rgb(214 214 214) 0px 10px 50px -10px;
+}
+
+section#ptitdej .container .hea{
+    margin-right: 80%;
+    text-align: center;
+    color: #2a2a2a;
+    margin-bottom: 60px;
+}
+
+section#ptitdej .container .hea input{
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e4e4ec;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+section#ptitdej .container .cate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* section#ptitdej .container .cate #cat .alm{
+    width: 45%;
+} */
+
+section#ptitdej .container .cate #cat .alm:hover{
+    border-bottom: 2px solid #10cb58;
+} 
+
+
+section#ptitdej .container .cate #cat .alm{
+    margin: 15px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4ec;
+    transition: 0.2s;
+}
+
+
+/* ----------------------------------------------------- */
+
+section#diner{
+    background-color: #f9f9fb;
+    padding: 50px 15px;
+}
+
+section#diner h1{
+    /* text-align :center; */
+    padding-left: 60px;
+    color: #2a2a2a;
+    margin-bottom: 60px;
+    font-size: 2.8em;
+}
+
+section#diner .container {
+    max-width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 60px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: rgb(214 214 214) 0px 10px 50px -10px;
+}
+
+section#diner .container .hea{
+    margin-right: 80%;
+    text-align: center;
+    color: #2a2a2a;
+    margin-bottom: 60px;
+}
+
+section#diner .container .hea input{
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e4e4ec;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+section#diner .container .cate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#diner .container .cate #cat1 .alm:hover{
+    border-bottom: 2px solid #10cb58;
+} 
+
+
+section#diner .container .cate #cat1 .alm{
+    margin: 15px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4ec;
+    transition: 0.2s;
+}
+
+body button{
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #20ca31;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    /* margin: 0 auto; */
+    transition: 0.2s;
+    margin-left: 1200px;
+    margin-bottom: 50px;
 }

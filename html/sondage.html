@@ -7,6 +7,7 @@
 
         <title>Sondage</title>
 
+
         <link rel="stylesheet" href="../css/style-sondage.css">
 
         <script src="../js/jquery-3.6.1.min.js"></script>
@@ -17,9 +18,7 @@
             <div class="logo">
                 <p><span>SONDAGE</spanx/p>
             </div>
-
             <div class="responsive_menu"></div>
-
             <ul class="menu">
                 <li><a href="sondage.html">SONDAGE</a></li>
                 <li><a href="avis.php">AVIS</a></li>
@@ -32,48 +31,91 @@
                 Pour cela, il y a la première partie sur le statut d'étudiant, puis la nourriture préfère au petit déjeuner et les aliments préfèrent au repas du soir.
             </p>
         </header>
-        <section class="identite">
-            <div class="content">
+        <section id="identite">
+            <h1>Les informations personnelles</h1>
+            <div class="container">
+                <div class="title">
+                    <h4>Tous les champs sont obligatoires</h4>
+                    <p class="civilite">Civilité
+                        <input type="radio" name="civilite" id="civilite_m" value="m" /><label for="civilite_m"><abbr title="Monsieur">M.</abbr></label>
+                        <input type="radio" name="civilite" id="civilite_mme" value="mme" /><label for="civilite_mme"><abbr title="Madame">Mme</abbr></label>
+                    </p>
+                </div>
+                <div class="fform">
 
-                <h1>Les informations personnelles</h1>
+                    <input type="text" name="nom" placeholder="Nom" id="nom" />
 
-                <p class="ligne">Civilité
-                    <input type="radio" name="civilite" id="civilite_m" value="m" /><label for="civilite_m"><abbr title="Monsieur">M.</abbr></label>
-                    <input type="radio" name="civilite" id="civilite_mme" value="mme" /><label for="civilite_mme"><abbr title="Madame">Mme</abbr></label>
-                    <input type="radio" name="civilite" id="civilite_mlle" value="mlle" /><label for="civilite_mlle"><abbr title="Mademoiselle">Mlle</abbr></label>
-                </p>
+                    <input type="text" name="prenom" placeholder="Prénom" id="prenom"/>
 
-    
-                <p class="saisie"><label for="nom">Nom*</label>
-                    <input type="text" name="nom" id="nom" />
-                </p>
+                    <input type="text" name="age" placeholder="Age" id="age" value=""/>
+            
+                    <input type="text" name="email" placeholder="Email" id="email" value=""/>
 
-                <p class="saisie"><label for="prenom">Prénom*</label>
-                    <input type="text" name="prenom" id="prenom"/>
-                </p>
+                    <input type="text" name="num" placeholder="N° Téléphone" id="num" />
 
-                <p class="saisie"><label for="email">Email*</label>
-                    <input type="text" name="email" id="email" value=""/>
-                </p>
+                    <input type="text" name="addrese" placeholder="Adresse" id="addrese" />
 
-                <p class="saisie"><label for="num"><abbr title="Numéro">N° Téléphone</abbr></label>
-                    <input type="text" name="num" id="num" />
-                </p>
+                    <input type="text" name="cp" placeholder="Code Postal" id="cp" />
 
-                <label for="niveau_classe">Votre classe :</label>
+                    <input type="text" name="etab" placeholder="Nom de l'établissement" id="etab" />
 
-                <select name="niveau" id="niveau_classe">
-                    <option value=""></option>
-                    <option value="6e">6e</option>
-                    <option value="5e">5e</option>
-                    <option value="4e">4e</option>
-                    <option value="3e">3e</option>
-                    <option value="2nd">2nd</option>
-                    <option value="1er">1er</option>
-                    <option value="Terminale">Terminale</option>
-                </select>
-
+                    <select name="niveau" class="niveau_classe">
+                        <option value="">Selectionner votre classe</option>
+                        <option value="6e">6e</option>
+                        <option value="5e">5e</option>
+                        <option value="4e">4e</option>
+                        <option value="3e">3e</option>
+                        <option value="2nd">2nd</option>
+                        <option value="1er">1er</option>
+                        <option value="Ter">Terminale</option>
+                        </optgroup>
+                    </select>
+                </div>
             </div>
         </section>
+        <section id="ptitdej">
+            <h1>Les aliments préférés au petit déjeuner</h1>
+            <div class="container">
+                <div class="hea">
+                    <input type="submit" id="ajouterali" value="Ajouter un aliment">
+                </div>
+                <div id="test" class="cate">
+                    <div id="cat">
+                        <select name="niveau" class="alm">
+                            <option value="">La catégorie de votre aliment</option>
+                        </select>
+                        <select name="niveau" class="alm">
+                            <option value="">La sous catégorie</option>
+                        </select>
+                        <select name="niveau" class="alm">
+                            <option value="">L'aliment</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diner">
+            <h1>Les aliments préférés au diner</h1>
+            <div class="container">
+                <div class="hea">
+                    <input type="submit" id="ajouterali1" value="Ajouter un aliment">
+                </div>
+                <div id="test1" class="cate">
+                    <div id="cat1">
+                        <select name="niveau" class="alm">
+                            <option value="">La catégorie de votre aliment</option>
+                        </select>
+                        <select name="niveau" class="alm">
+                            <option value="">La sous catégorie</option>
+                        </select>
+                        <select name="niveau" class="alm">
+                            <option value="">L'aliment</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button>Valider</button>
     </body>
 </html>

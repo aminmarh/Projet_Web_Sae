@@ -157,7 +157,6 @@ section#contact .container form {
 
 section#contact .container form input{
     width: 45%;
-
 }
 
 section#contact .container form input:hover,
@@ -198,7 +197,6 @@ section#contact .container form button{
     outline: none;
     margin: 0 auto;
     transition: 0.2s;
-    
 }
 
 section#contact .container form button:hover{
