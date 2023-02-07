@@ -13,4 +13,13 @@ function init (){
     $("#ajouterali1").click(function(){
         $("#cat1").clone().prependTo( "#test1" );
     })
+
+
+    $(".almc").on("click",function (){
+        alert("cc");
+        $.post("../html/resouscateg.php",{idcateg : $("#test").val()},function(data){
+            alert(data);
+        });
+        return false;
+    });
 }

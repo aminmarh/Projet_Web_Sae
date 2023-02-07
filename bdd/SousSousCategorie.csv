@@ -1,0 +1,137 @@
+﻿idSousSousCategorie;NomCategorie;idSousCategorie
+1;Non spécialisable;1
+2;Non spécialisable;2
+3;Non spécialisable;4
+4;Non spécialisable;5
+5;Non spécialisable;6
+6;Non spécialisable;8
+7;Non spécialisable;11
+8;Non spécialisable;14
+9;Non spécialisable;16
+10;Non spécialisable;18
+11;Non spécialisable;19
+12;Non spécialisable;20
+13;Non spécialisable;21
+14;Non spécialisable;22
+15;Non spécialisable;23
+16;Non spécialisable;24
+17;Non spécialisable;26
+18;Non spécialisable;29
+19;Non spécialisable;30
+20;Non spécialisable;31
+21;Non spécialisable;34
+22;Non spécialisable;35
+23;Non spécialisable;36
+24;Non spécialisable;37
+25;Non spécialisable;38
+26;Non spécialisable;39
+27;Non spécialisable;40
+28;Non spécialisable;41
+29;Non spécialisable;42
+30;Non spécialisable;43
+31;Non spécialisable;44
+32;Non spécialisable;45
+33;Non spécialisable;46
+34;Non spécialisable;47
+35;Non spécialisable;48
+36;Non spécialisable;49
+37;Non spécialisable;50
+38;Non spécialisable;51
+39;Non spécialisable;52
+40;Non spécialisable;53
+41;Non spécialisable;54
+42;Non spécialisable;55
+43;Non spécialisable;57
+44;Non spécialisable;58
+45;Non spécialisable;59
+46;Non spécialisable;60
+47;Non spécialisable;61
+48;Non spécialisable;62
+49;Non spécialisable;63
+50;plats de viande sans garniture;3
+51;plats de viande et féculents;3
+52;plats de viande et légumes/légumineuses;3
+53;plats de poisson sans garniture;3
+54;plats de poisson et féculents;3
+55;plats de légumes/légumineuses;3
+56;plats de céréales/pâtes;3
+57;plats de fromage;3
+58;plats végétariens;3
+59;légumes crus;7
+60;légumes cuits;7
+61;légumes séchés ou déshydratés;7
+62;légumes et leurs produits de la Martinique;7
+63;légumes et leurs produits de la Réunion;7
+64;légumineuses cuites;9
+65;légumineuses fraîches;9
+66;légumineuses sèches;9
+67;fruits crus;10
+68;compotes et assimilés;10
+69;fruits appertisés;10
+70;fruits séchés;10
+71;fruits et leurs produits de la Martinique;10
+72;fruits et leurs produits de la Réunion;10
+73;pâtes, riz et céréales cuits;12
+74;pâtes, riz et céréales crus;12
+75;pains;13
+76;biscottes et pains grillés;13
+77;farines;15
+78;pâtes;15
+79;bœuf et veau halal;16
+80;porc;16
+81;poulet halal;16
+82;dinde casher;16
+83;agneau et mouton casher;16
+84;gibier casher;16
+85;autres viandes;16
+86;abats halal;16
+87;bœuf et veau;17
+88;porc cru;17
+89;poulet;17
+90;dinde;17
+91;agneau et mouton;17
+92;gibier;17
+93;autres viandes casher;17
+94;abats;17
+95;jambons cuits;18
+96;jambons secs et crus;18
+97;saucisson secs;18
+98;saucisses et assimilés;18
+99;pâtés et terrines;18
+100;rillettes;18
+101;quenelles;18
+102;autres spécialités charcutières;18
+103;substituts de charcuteries pour végétariens;18
+104;œufs cuits;25
+105;œufs crus;25
+106;omelettes et autres ovoproduits;25
+107;laits de vaches liquides (non concentrés);27
+108;laits autres que de vache;27
+109;laits de vache concentrés ou en poudre;27
+110;yaourts et spécialités laitières type yaourt;28
+111;fromages blancs;28
+112;desserts lactés;28
+113;autres desserts;28
+114;desserts végétaux;28
+115;fromages à pâte molle;29
+116;fromages à pâte persillée;29
+117;fromages à pâte pressée;29
+118;fromage fondus;29
+119;autres fromages et spécialités;29
+120;substituts de fromages pour végétariens;29
+121;jus;32
+122;nectars;32
+123;boissons rafraîchissantes sans alcool;32
+124;boissons rafraîchissantes lactées;32
+125;boissons végétales;32
+126;café, thé, cacao etc. prêts à consommer;32
+127;boissons à reconstituer;32
+128;vins;32
+129;bières et cidres;33
+130;liqueurs et alcools;33
+131;cocktails;33
+132;sauces condimentaires;51
+133;sauces chaudes;51
+134;sauces sucrées;51
+135;herbes fraîches;56
+136;herbes séchées;56

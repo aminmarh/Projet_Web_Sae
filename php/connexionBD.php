@@ -1,6 +1,6 @@
 <?php
 	$dbHostname = "localhost";
-	$dbName = "appli_web";
+	$dbName = "sae401";
 	$dbLogin = "root";	
 	$dbPwd = "root";
 	// URL de connexion à la base de données

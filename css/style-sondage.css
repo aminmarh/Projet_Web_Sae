@@ -478,6 +478,6 @@ body button{
     outline: none;
     /* margin: 0 auto; */
     transition: 0.2s;
-    margin-left: 1200px;
+    margin-left: 80%;
     margin-bottom: 50px;
 }

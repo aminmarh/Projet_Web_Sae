@@ -1,0 +1,64 @@
+﻿idSousCategorie;NomSousCategorie;idCategorie
+1;salades composées et crudités;1
+2;soupes;1
+3;plats composés;1
+4;pizzas, tartes et crêpes salées;1
+5;sandwichs;1
+6;feuilletées et autres entrées;1
+7;légumes;2
+8;pommes de terre et autres tubercules;2
+9;légumineuses;2
+10;fruits;2
+11;fruits à coque et graines oléagineuses;2
+12;pâtes, riz et céréales;3
+13;pains et assimilés;3
+14;biscuits apéritifs;3
+15;pates et farines;3
+16;viandes cuites;4
+17;viandes crues;4
+18;charcuteries et assimilés;4
+19;autres produits à base de viande;4
+20;poissons cuits;4
+21;poissons crus;4
+22;mollusques et crustacés cuits;4
+23;mollusques et crustacés crus;4
+24;produits à base de poissons et produits de la mer;4
+25;œufs;4
+26;substitus de produits carnés;4
+27;laits;5
+28;produits laitiers frais et assimilés;5
+29;fromages et assimilés;5
+30;crèmes et spécialités à base de crème;5
+31;eaux;6
+32;boissons sans alcool;6
+33;boisson alcoolisées;6
+34;sucres, miels et assimilés;7
+35;chocolats et produits à base de chocolat;7
+36;confiseries non chocolatées;7
+37;confitures et assimilés;7
+38;viennoiseries;7
+39;biscuits sucrés;7
+40;céréales de petit-déjeuner;7
+41;barres céréalières;7
+42;gâteaux et pâtisseries;7
+43;glaces;8
+44;sorbets;8
+45;desserts glacés;8
+46;beurres;9
+47;huiles et graisses végétales;9
+48;margarines;9
+49;huiles de poissons;9
+50;autres matières grasses;9
+51;sauces;10
+52;condiments;10
+53;aides culinaires;10
+54;sels;10
+55;épices;10
+56;herbes;10
+57;algues;10
+58;denrées destinées à une alimentation particulière;10
+59;ingrédients divers;10
+60;laits et boissons infantiles;11
+61;petits pots salés et plats infantiles;11
+62;desserts infantiles;11
+63;céréales et biscuits infantiles;11
