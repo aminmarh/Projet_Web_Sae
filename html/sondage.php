@@ -1,7 +1,7 @@
 <?php
     extract($_POST);
     require "../php/connexionBD.php";
-    $pdo = seConnecterBD();
+    $pdo = connectToDb();
     $pdo->exec('SET NAMES utf8');
 ?>
 

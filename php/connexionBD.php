@@ -1,17 +1,13 @@
 <?php
-	$dbHostname = "localhost";
-	$dbName = "sae401";
-	$dbLogin = "root";	
-	$dbPwd = "root";
-	// URL de connexion à la base de données
-	$dbURL = "mysql:server=$dbHostname;dbname=$dbName";
-
-	// renvoie un objet Connexion ($pdo) à la base de données
-	function seConnecterBD () {
-		global $dbLogin,$dbPwd, $dbURL;		
-		// Créer un objet de connexion à la base de données
-		// Choix de ne pas traiter les exceptions (erreurs de connexion) ici mais au niveau de l'appelant
-		$pdo = new PDO ($dbURL, $dbLogin, $dbPwd);			
-		return $pdo;	
+	function connectToDb() {
+		try {
+			$conn = new PDO("mysql:host=bino1jjljg7soefvrjiq-mysql.services.clever-cloud.com;dbname=bino1jjljg7soefvrjiq", "utwbhpnykdwthejb", "q9Ddj5miAPLOf4nBLJlM");
+			// set the PDO error mode to exception
+			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			return $conn;
+		} catch(PDOException $e) {
+			echo "Connection failed: " . $e->getMessage();
+		}
 	}
 ?>
+
