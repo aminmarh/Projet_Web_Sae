@@ -11,16 +11,14 @@
         'idcateg' => $idcatege,
     ));
 
-    $data = array(); // Initialiser un tableau vide
+    $data = array(); 
 
     while ($donnees = $reponse->fetch()){
-        // Ajouter les résultats de la requête à notre tableau $data
         $data[] = array(
             'id' => $donnees['idSousCategorie'],
             'nom' => $donnees['NomSousCategorie']
         );
     }
 
-    // Renvoyer le tableau sous forme de JSON
     header('Content-Type: application/json');
     echo json_encode($data);

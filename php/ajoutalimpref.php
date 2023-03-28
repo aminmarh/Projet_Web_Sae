@@ -3,53 +3,44 @@
     require "connexionBD.php";
     $pdo = connectToDb();
 
-    if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['age']) && !empty($_POST['email']) 
-        && !empty($_POST['num']) && !empty($_POST['adresse']) && !empty($_POST['cp'])
-        && !empty($_POST['etab']) && !empty($_POST['niveau'])){
+    $civilite = $_POST['civilite'];
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $age = $_POST['age'];
+    $email = $_POST['email'];
+    $num = $_POST['num'];
+    $addresse = $_POST['addresse'];
+    $cp = $_POST['cp'];
+    $etab = $_POST['etab'];
+    $niveau = $_POST['niveau'];
 
-        $civilite = htmlspecialchars($_POST['civilite']);
-        $nom = htmlspecialchars($_POST['nom']);
-        $prenom = htmlspecialchars($_POST['prenom']);
-        $age = htmlspecialchars($_POST['age']);
-        $email = htmlspecialchars($_POST['email']);
-        $num = htmlspecialchars($_POST['num']);
-        $adresse = htmlspecialchars($_POST['adresse']);
-        $cp = htmlspecialchars($_POST['cp']);
-        $etab = htmlspecialchars($_POST['etab']);
-        $niveau = htmlspecialchars($_POST['niveau']);
+    $alimPref = isset($_POST['alimm']) ? $_POST['alimm'] : [];
 
-        if(preg_match('/^[a-zA-Z]+$/', $_POST['nom'])){    
-            if (preg_match('/^[a-zA-Z]+$/', $_POST['prenom'])){
-                if (preg_match('/^[0-9]+$/', $_POST['age'])){
-                    if (filter_var($email, FILTER_VALIDATE_EMAIL)){
-                        if (preg_match('/^[0-9]+$/', $_POST['num'])){
-                            if (preg_match('/^[0-9a-zA-Z]+$/', $_POST['adresse'])){
-                                if (preg_match('/^[0-9]+$/', $_POST['cp'])){
-                                    if (preg_match('/^[a-zA-Z]+$/', $_POST['etab'])){
-                                        $insert = $pdo->prepare('INSERT INTO personne(Civilite, Nom, Prenom, Age, Email, Telephone, Adresse, CP, Ecole, Classe) VALUES(:civlite, :nom, :prenom, :age, :email, :telephone, :adresse, :cp, :ecole, :classe)');
-                                        $insert->execute(array(
-                                            'civlite' => $civilite,
-                                            'nom' => $nom,
-                                            'prenom' => $prenom,
-                                            'age' => $age,
-                                            'email' => $email,
-                                            'telephone' => $num,
-                                            'adresse' => $adresse,
-                                            'cp' => $cp,
-                                            'ecole' => $etab,
-                                            'classe' => $niveau,
-                                        ));
-                    
-                                    }
-                
-                                }
-                            }
-        
-                        }
-                    }
-                }
-            }
+
+
+    $insert = $pdo->prepare('INSERT INTO personne(Civilite, Nom, Prenom, Age, Email, Telephone, Adresse, CP, Ecole, Classe) VALUES(:civilite, :nom, :prenom, :age, :email, :telephone, :adresse, :cp, :ecole, :classe)');
+    $insert->execute(array(
+        'civilite' => $civilite,
+        'nom' => $nom,
+        'prenom' => $prenom,
+        'age' => $age,
+        'email' => $email,
+        'telephone' => $num,
+        'adresse' => $addresse,
+        'cp' => $cp,
+        'ecole' => $etab,
+        'classe' => $niveau,
+    ));
+
+    $personneId = $pdo->lastInsertId();
+
+        foreach ($alimPref as $alim) {
+            $insertAlim = $pdo->prepare('INSERT INTO alimentpref(idAliment, idPersonne) VALUES(:idAliment, :idPersonne)');
+            $insertAlim->execute(array(
+                'idAliment' => $alim,
+                'idPersonne' => $personneId,
+            ));
         }
 
-    }
-
+    echo "Avis enregistrer :)";
+                    

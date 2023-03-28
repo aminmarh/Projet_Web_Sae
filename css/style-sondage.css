@@ -368,7 +368,10 @@ section#ptitdej .container .hea input{
     transition: 0.2s;
 }
 
-section#ptitdej .container .cate{
+section#ptitdej .container .cate,
+section#ptitdej .container .cate1,
+section#ptitdej .container .cate2,
+section#ptitdej .container .cate3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -378,7 +381,7 @@ section#ptitdej .container .cate{
     width: 45%;
 } */
 
-section#ptitdej .container .cate #cat .almc:hover
+section#ptitdej .container .cate #cat .almc:hover,
 section#ptitdej .container .cate #cat .alm:hover{
     border-bottom: 2px solid #10cb58;
 } 

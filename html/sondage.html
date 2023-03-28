@@ -36,27 +36,20 @@
             <div class="container">
                 <div class="title">
                     <h4>Tous les champs sont obligatoires</h4>
-                    <p class="civilite">Civilité
-                        <input type="radio" name="civilite" id="civilite_m" value="m" /><label for="civilite_m"><abbr title="Monsieur">M.</abbr></label>
-                        <input type="radio" name="civilite" id="civilite_mme" value="mme" /><label for="civilite_mme"><abbr title="Madame">Mme</abbr></label>
+                    <p class="civilit">Civilité
+                        <input type="radio" name="civilite" id="civilite" value="M" /><label for="civilite_m"><abbr title="Monsieur">M.</abbr></label>
+                        <input type="radio" name="civilite" id="civilite" value="Mme" /><label for="civilite_mme"><abbr title="Madame">Mme.</abbr></label>
                     </p>
                 </div>
+
                 <div class="fform">
-
                     <input type="text" name="nom" placeholder="Nom" id="nom" value=""/>
-
                     <input type="text" name="prenom" placeholder="Prénom" id="prenom" value=""/>
-
                     <input type="text" name="age" placeholder="Age" id="age" value=""/>
-            
                     <input type="text" name="email" placeholder="Email" id="email" value=""/>
-
                     <input type="text" name="num" placeholder="N° Téléphone" id="num" value=""/>
-
                     <input type="text" name="addrese" placeholder="Adresse" id="addrese" value="" />
-
                     <input type="text" name="cp" placeholder="Code Postal" id="cp" value=""/>
-
                     <input type="text" name="etab" placeholder="Nom de l'établissement" id="etab" value=""/>
 
                     <select name="niveau" class="niveau_classe">
@@ -70,8 +63,10 @@
                         <option value="Ter">Terminale</option>
                     </select>
                 </div>
+                
             </div>
         </section>
+        
         <section id="ptitdej">
             <h1>Les aliments préférés au petit déjeuner</h1>
             <div class="container">
@@ -80,20 +75,33 @@
                 </div>
                 <div id="test" class="cate">
                     <div id="cat">
-                        <form action="recherchebd.php" method="post"></form>
-                        <select id="almc" name="niveau" class="alm">
+<!--                        <form action="recherchebd.php" method="post"></form>-->
+                        <select id="almc0" name="niveau" class="alm">
                             <option value="">La catégorie de votre aliment</option>
                         </select>
-                        <select id="almsc" name="niveau" class="almc">
+                        <select id="almsc0" name="niveau" class="almc">
                             <option value="">La sous catégorie</option>
                         </select>
-                        <select id="almssc" name="niveau" class="almc">
+                        <select id="almssc0" name="niveau" class="almc">
                             <option value="">La sous sous catégorie</option>
                         </select>
-                        <select id="alm" name="niveau" class="alm">
+                        <select id="alm0" name="niveau" class="alm">
                             <option value="">L'aliment</option>
                         </select>
                     </div>
+                    <div id="cat1">
+
+                    </div>
+                    <div id="cat2">
+
+                    </div>
+                    <div id="cat3">
+
+                    </div>
+                    <div id="cat4">
+
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -105,24 +113,36 @@
                     <input type="submit" id="ajouterali1" value="Ajouter un aliment">
                 </div>
                 <div id="test1" class="cate">
-                    <div id="cat1">
-                        <select id="almcd" name="niveau" class="alm">
+                    <div id="catd">
+                        <select id="almcd0" name="niveau" class="alm">
                             <option value="">La catégorie de votre aliment</option>
                         </select>
-                        <select id="almscd" name="niveau" class="alm">
+                        <select id="almscd0" name="niveau" class="alm">
                             <option value="">La sous catégorie</option>
                         </select>
-                        <select id="almsscd" name="niveau" class="almc">
+                        <select id="almsscd0" name="niveau" class="almc">
                             <option value="">La sous sous catégorie</option>
                         </select>
-                        <select id="almd" name="niveau" class="alm">
+                        <select id="almd0" name="niveau" class="alm">
                             <option value="">L'aliment</option>
                         </select>
                         </select>
                     </div>
+                    <div id="catd1">
+
+                    </div>
+                    <div id="catd2">
+
+                    </div>
+                    <div id="catd3">
+
+                    </div>
+                    <div id="catd4">
+
+                    </div>
                 </div>
             </div>
         </section>
-        <button id="valider">Valider</button>
+        <input id="valider" type="submit" value="Valider"/>
     </body>
 </html>
