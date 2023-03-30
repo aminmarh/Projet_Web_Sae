@@ -14,7 +14,9 @@
     $etab = $_POST['etab'];
     $niveau = $_POST['niveau'];
 
-    $alimPref = isset($_POST['alimm']) ? $_POST['alimm'] : [];
+    $alimPref_dej = isset($_POST['alimm_dej']) ? $_POST['alimm_dej'] : [];
+    $alimPref_diner = isset($_POST['alimm_diner']) ? $_POST['alimm_diner'] : [];
+    
 
 
 
@@ -34,13 +36,21 @@
 
     $personneId = $pdo->lastInsertId();
 
-        foreach ($alimPref as $alim) {
-            $insertAlim = $pdo->prepare('INSERT INTO alimentpref(idAliment, idPersonne) VALUES(:idAliment, :idPersonne)');
-            $insertAlim->execute(array(
-                'idAliment' => $alim,
+        foreach ($alimPref_dej as $alimdej) {
+            $insertAlimdej = $pdo->prepare('INSERT INTO alimentprefdej(idAliment, idPersonne) VALUES(:idAliment, :idPersonne)');
+            $insertAlimdej->execute(array(
+                'idAliment' => $alimdej,
                 'idPersonne' => $personneId,
             ));
         }
+
+        foreach ($alimPref_diner as $alimdiner) {
+                $insertAlimdiner = $pdo->prepare('INSERT INTO alimentprefdiner(idAliment, idPersonne) VALUES(:idAliment, :idPersonne)');
+                $insertAlimdiner->execute(array(
+                    'idAliment' => $alimdiner,
+                    'idPersonne' => $personneId,
+                ));
+            }
 
     echo "Avis enregistrer :)";
                     

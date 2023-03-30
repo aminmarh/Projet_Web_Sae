@@ -7,7 +7,8 @@ var cpt = 4;
 var cptd = 4;
 var i = 1;
 var id = 1;
-var alimpref = [];
+var alimpref_dej = [];
+var alimpref_diner = [];
 
 function init () {
     $('.responsive_menu').click(function () {
@@ -86,15 +87,6 @@ function init () {
         });
     };
 
-    // function ajoutalm(x) {
-    //     $(x).change(function () {
-    //         alim = $(this).val();
-    //         console.log(alim);
-    //         alimpref.push(alim);
-    //     });
-    // };
-
-
     ajoutalmc('#almc0');
     ajoutalmsc('#almc0', '#almsc0');
     ajoutalmssc('#almsc0', '#almssc0');
@@ -107,7 +99,7 @@ function init () {
 
 
     function estPrenomNomValide(prenomNom) {
-        var regex = /^[a-zA-Z\s,'-]*$/;
+        var regex = /^[a-zA-ZÀ-ÿ\s,'-]*$/;
         return regex.test(prenomNom);
     };
 
@@ -123,7 +115,7 @@ function init () {
 
 
     function estadresse(adresse) {
-        var regex = /^[a-zA-Z0-9\s,'-]*$/;
+        var regex = /^[a-zA-Z0-9À-ÿ\s,'-]*$/;
         return regex.test(adresse);
     };
 
@@ -133,13 +125,35 @@ function init () {
     };
 
     function estetab(etab) {
-        var regex = /^[a-zA-Z\s,'-]*$/;
+        var regex = /^[a-zA-ZÀ-ÿ\s,'-]*$/;
         return regex.test(etab);
     };
 
     function isValidPhoneNumber(num) {
         var phoneRegex = /^\d{10}$/;
         return phoneRegex.test(num);
+    };
+
+    function lderorantedej() {
+        var val = true;
+        for (var j = 1; j <= i; j++) {
+            if ($("[id='almc" + (j - 1) + "']").val() == "" || $("[id='almsc" + (j - 1) + "']").val() == "" || $("[id='almssc" + (j - 1) + "']").val() == "" || $("[id='alm" + (j - 1) + "']").val() == "") {
+                val = false;
+                break;
+            }
+        }
+        return val;
+    };
+
+    function lderorantediner() {
+        var val = true;
+        for (var z = 1; z <= id; z++) {
+            if ($("[id='almcd" + (z - 1) + "']").val() == "" || $("[id='almscd" + (z - 1) + "']").val() == "" || $("[id='almsscd" + (z - 1) + "']").val() == "" || $("[id='almd" + (z - 1) + "']").val() == "") {
+                val = false;
+                break;
+            }
+        }
+        return val;
     };
 
     $('input[name="civilite"]').change(function () {
@@ -243,7 +257,9 @@ function init () {
             addresse.trim() === "" ||
             cp.trim() === "" ||
             etab.trim() === "" ||
-            niveau.trim() === "") {
+            niveau.trim() === "" ||
+            lderorantedej() == false ||
+            lderorantediner() == false) {
             alert("Veuillez remplir tous les champs requis !");
             return;
         } else if (!estPrenomNomValide(nom)) {
@@ -270,13 +286,12 @@ function init () {
         } else if (!estetab(etab)) {
             alert("Veuillez entrer un établissement valide !");
             return;
-
         } else {
             for (var j = 0; j < i; j++) {
-                alimpref.push($("[id='alm" + j + "']").val());
+                alimpref_dej.push($("[id='alm" + j + "']").val());
             }
             for (var z = 0; z < id; z++) {
-                alimpref.push($("[id='almd" + z + "']").val());
+                alimpref_diner.push($("[id='almd" + z + "']").val());
             }
 
             $.ajax({
@@ -292,7 +307,8 @@ function init () {
                     cp: cp,
                     etab:etab,
                     niveau: niveau,
-                    alimm: alimpref
+                    alimm_dej: alimpref_dej,
+                    alimm_diner: alimpref_diner
                 },
                 method: 'POST',
                 success: function(data) {

@@ -129,6 +129,8 @@ header p {
     margin-top: 5px;
     font-size: 20px;
     text-align: center;
+    
+    height:200px
 }
 
 /* Animation background */
@@ -153,6 +155,7 @@ header p {
 @media (max-width:760px) {
     nav ul {
         display: none;
+        
     }
     .responsive_menu {
         width: 50px;
@@ -200,13 +203,17 @@ header p {
         height: 100%;
         backdrop-filter: blur(100px);
         align-items: center;
-        justify-content: center;
+        margin-top: 80px;
         flex-direction: column;
         z-index: 1;
+        margin-bottom: 100px;
     }
 
     .menu.responsive li {
         margin: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        
     }
 }
 
@@ -344,13 +351,17 @@ section#ptitdej .container {
     border-radius: 15px;
     box-sizing: border-box;
     box-shadow: rgb(214 214 214) 0px 10px 50px -10px;
+    
+
+
+    
 }
 
 section#ptitdej .container .hea{
     margin-right: 80%;
     text-align: center;
     color: #2a2a2a;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 section#ptitdej .container .hea input{
@@ -366,6 +377,7 @@ section#ptitdej .container .hea input{
     outline: none;
     margin: 0 auto;
     transition: 0.2s;
+    text-align:center;
 }
 
 section#ptitdej .container .cate,
@@ -375,6 +387,7 @@ section#ptitdej .container .cate3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 
 /* section#ptitdej .container .cate #cat .alm{
@@ -382,12 +395,28 @@ section#ptitdej .container .cate3{
 } */
 
 section#ptitdej .container .cate #cat .almc:hover,
-section#ptitdej .container .cate #cat .alm:hover{
+section#ptitdej .container .cate #cat .alm:hover,
+section#ptitdej .container .cate #cat1 .almc:hover,
+section#ptitdej .container .cate #cat1 .alm:hover,
+section#ptitdej .container .cate #cat2 .almc:hover,
+section#ptitdej .container .cate #cat2 .alm:hover,
+section#ptitdej .container .cate #cat3 .almc:hover,
+section#ptitdej .container .cate #cat3 .alm:hover,
+section#ptitdej .container .cate #cat4 .almc:hover,
+section#ptitdej .container .cate #cat4 .alm:hover{
     border-bottom: 2px solid #10cb58;
 } 
 
 section#ptitdej .container .cate #cat .almc,
-section#ptitdej .container .cate #cat .alm{
+section#ptitdej .container .cate #cat .alm,
+section#ptitdej .container .cate #cat1 .almc,
+section#ptitdej .container .cate #cat1 .alm,
+section#ptitdej .container .cate #cat2 .almc,
+section#ptitdej .container .cate #cat2 .alm,
+section#ptitdej .container .cate #cat3 .almc,
+section#ptitdej .container .cate #cat3 .alm,
+section#ptitdej .container .cate #cat4 .almc,
+section#ptitdej .container .cate #cat4 .alm{
     margin: 15px 0;
     padding: 10px;
     box-sizing: border-box;
@@ -395,6 +424,7 @@ section#ptitdej .container .cate #cat .alm{
     outline: none;
     border-bottom: 2px solid #e4e4ec;
     transition: 0.2s;
+    width: 400px;
 }
 
 
@@ -425,13 +455,17 @@ section#diner .container {
     border-radius: 15px;
     box-sizing: border-box;
     box-shadow: rgb(214 214 214) 0px 10px 50px -10px;
+    
 }
 
 section#diner .container .hea{
     margin-right: 80%;
     text-align: center;
     color: #2a2a2a;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    
+
+    
 }
 
 section#diner .container .hea input{
@@ -447,6 +481,8 @@ section#diner .container .hea input{
     outline: none;
     margin: 0 auto;
     transition: 0.2s;
+    text-align: center;
+    
 }
 
 section#diner .container .cate{
@@ -455,13 +491,29 @@ section#diner .container .cate{
     justify-content: space-around;
 }
 
-section#diner .container .cate #cat1 .almc:hover,
-section#diner .container .cate #cat1 .alm:hover{
+section#diner .container .cate #catd .almc:hover,
+section#diner .container .cate #catd .alm:hover,
+section#diner .container .cate #catd1 .almc:hover,
+section#diner .container .cate #catd1 .alm:hover,
+section#diner .container .cate #catd2 .almc:hover,
+section#diner .container .cate #catd2 .alm:hover,
+section#diner .container .cate #catd3 .almc:hover,
+section#diner .container .cate #catd3 .alm:hover,
+section#diner .container .cate #catd4 .almc:hover,
+section#diner .container .cate #catd4 .alm:hover{
     border-bottom: 2px solid #10cb58;
 } 
 
-section#diner .container .cate #cat1 .almc,
-section#diner .container .cate #cat1 .alm{
+section#diner .container .cate #catd .almc,
+section#diner .container .cate #catd .alm,
+section#diner .container .cate #catd1 .almc,
+section#diner .container .cate #catd1 .alm,
+section#diner .container .cate #catd2 .almc,
+section#diner .container .cate #catd2 .alm,
+section#diner .container .cate #catd3 .almc,
+section#diner .container .cate #catd3 .alm,
+section#diner .container .cate #catd4 .almc,
+section#diner .container .cate #catd4 .alm{
     margin: 15px 0;
     padding: 10px;
     box-sizing: border-box;
@@ -469,9 +521,55 @@ section#diner .container .cate #cat1 .alm{
     outline: none;
     border-bottom: 2px solid #e4e4ec;
     transition: 0.2s;
+    width: 400px;
+    
 }
 
-body button{
+div#catd{
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+div#catd1{
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+div#catd2{
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+
+    
+}
+div#catd3{
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div#catd4{
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    
+}
+
+
+
+ /* ------------------------------------------------------------------------------------------------ */
+
+
+#valider{
     width: 192px;
     height: 50px;
     border-radius: 8px;
@@ -486,4 +584,239 @@ body button{
     transition: 0.2s;
     margin-left: 80%;
     margin-bottom: 50px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+@media only screen and (max-width: 1440px) {
+
+    div#catd{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div#catd1{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    div#catd2{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    div#catd3{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    div#catd4{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+ 
+    section#ptitdej h1,
+    section#diner h1,section#identite h1 {
+        font-size: 2em;
+        padding-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    section#ptitdej .container
+     {
+        padding: 30px 5px;
+        align-items: center;
+        
+
+    }
+    section#diner .container{
+        padding: 30px 5px;
+        align-items: center;
+    }
+    
+
+    section#ptitdej .container .hea,
+    section#diner .container .hea {
+        margin-right: 60%;
+        
+    }
+
+    section#ptitdej .container .cate,
+    section#diner .container .cate {
+        display:flex;
+        flex-direction: column;
+        
+    }
+   
+
+
+    #valider{
+        width: 160px;
+        height: 40px;
+        font-size: 1em;
+        margin-left: 70%;
+        margin-bottom: 30px;
+    }
+    section#ptitdej .container select,select#diner .container select{
+        display:flex;
+        justify-content: center;
+    }
+    p{
+        width:300px;
+    }
+   
+}
+
+@media only screen and (max-width: 800px) {
+
+  
+    
+    section#ptitdej h1,
+    section#diner h1,section#identite h1 {
+        font-size: 1.5em;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    section#ptitdej .container,
+    section#diner .container {
+        padding: 15px 3px;
+        align-items: center;
+    }
+
+    section#ptitdej .container .hea,
+    section#diner .container .hea {
+        margin-right: 40%;
+        }
+        section#ptitdej .container .cate,
+        section#diner .container .cate {
+    display:flex;
+    flex-direction: column;
+}
+
+ section#ptitdej .container .cate #cat .alm,
+ section#diner .container .cate #cat1 .alm,
+ section#ptitdej .container .cate #cat1 .almc,
+section#ptitdej .container .cate #cat1 .alm,
+section#ptitdej .container .cate #cat2 .almc,
+section#ptitdej .container .cate #cat2 .alm,
+section#ptitdej .container .cate #cat3 .almc,
+section#ptitdej .container .cate #cat3 .alm,
+section#ptitdej .container .cate #cat4 .almc,
+section#ptitdej .container .cate #cat4 .alm {
+    margin: 5px 0;
+    padding: 5px;
+} 
+
+
+
+#valider {
+    width: 130px;
+    height: 30px;
+    font-size: 0.8em;
+    margin-left: 60%;
+    margin-bottom: 20px;
+}
+section#ptitdej .container select,
+section#diner .container select{
+    display:flex;
+    justify-content: center;
+   
+}
+
+
+}
+section#ptitdej .container .cate #cat .almc,
+section#ptitdej .container .cate #cat .alm,
+section#ptitdej .container .cate #cat1 .almc,
+section#ptitdej .container .cate #cat1 .alm,
+section#ptitdej .container .cate #cat2 .almc,
+section#ptitdej .container .cate #cat2 .alm,
+section#ptitdej .container .cate #cat3 .almc,
+section#ptitdej .container .cate #cat3 .alm,
+section#ptitdej .container .cate #cat4 .almc,
+section#ptitdej .container .cate #cat4 .alm{
+    width:280px;
+}
+
+    section#diner .container .cate #catd .almc,
+    section#diner .container .cate #catd .alm,
+    section#diner .container .cate #catd1 .almc,
+    section#diner .container .cate #catd1 .alm,
+    section#diner .container .cate #catd2 .almc,
+    section#diner .container .cate #catd2 .alm,
+    section#diner .container .cate #catd3 .almc,
+    section#diner .container .cate #catd3 .alm,
+    section#diner .container .cate #catd4 .almc,
+    section#diner .container .cate #catd4 .alm{
+    width: 280px;
+    
+
+}
+
+
+p{
+    width:300px;
+} 
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
+    p{
+        width:500px;
+        
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+    h4{
+        font-size:14px
+    }
+    section#ptitdej .container .hea input, section#diner .container .hea input{
+        width:100px;
+        font-size:60%;
+        
+        
+    }
+    section#ptitdej .container .cate #cat .almc,
+    section#ptitdej .container .cate #cat .alm,
+    section#ptitdej .container .cate #cat1 .almc,
+    section#ptitdej .container .cate #cat1 .alm,
+    section#ptitdej .container .cate #cat2 .almc,
+    section#ptitdej .container .cate #cat2 .alm,
+    section#ptitdej .container .cate #cat3 .almc,
+    section#ptitdej .container .cate #cat3 .alm,
+    section#ptitdej .container .cate #cat4 .almc,
+    section#ptitdej .container .cate #cat4 .alm{
+        width:200px;
+    }
+    section#diner .container .cate #catd .almc,
+    section#diner .container .cate #catd .alm,
+    section#diner .container .cate #catd1 .almc,
+    section#diner .container .cate #catd1 .alm,
+    section#diner .container .cate #catd2 .almc,
+    section#diner .container .cate #catd2 .alm,
+    section#diner .container .cate #catd3 .almc,
+    section#diner .container .cate #catd3 .alm,
+    section#diner .container .cate #catd4 .almc,
+    section#diner .container .cate #catd4 .alm     
+    {
+        width:200px;
+    }
+    
+        
+    
+    .responsive_menu {
+        position:absolute;
+        padding-left:220px;
+        
+    }
+
 }
