@@ -12,6 +12,9 @@ Voici notre répertoire sur notre SAE
 ## <u>Site</u><br>
 Le lien pour la partie sondage: https://sondage56.epizy.com/<br>
 Le lien pour la partie analyse: https://analyse56.epizy.com/<br>
+Identifiants pour accéder au site analyse : <br>
+    - Identifiant : admin@sondage.fr<br>
+    - Mot de passe : admin56<br>
 Le lien du trello : https://trello.com/invite/b/KYR7EUIo/ATTI333f4f0fd6f48f553a6af8e607201fb214CD2B24/saeweb
 
 
