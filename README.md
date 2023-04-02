@@ -13,6 +13,7 @@ Voici notre répertoire sur notre SAE
 Le lien pour la partie sondage: https://sondage56.epizy.com/<br>
 Le lien pour la partie analyse: https://analyse56.epizy.com/<br>
 Le lien du trello : https://trello.com/invite/b/KYR7EUIo/ATTI333f4f0fd6f48f553a6af8e607201fb214CD2B24/saeweb
+<<<<<<< HEAD
 
 
 ## Rapport
@@ -28,4 +29,6 @@ Le lien du trello : https://trello.com/invite/b/KYR7EUIo/ATTI333f4f0fd6f48f553a6
         <p>Veuillez télécharger le diapo pour le voir : <a href="https://github.com/aminmarh/Projet_Web_Sae/blob/main/Ressources/Diapo SAE Sondage.pdf">Diapo</a>.</p>
     </embed>
 </object>
+=======
+>>>>>>> f205772b81218f6f8c4fe18217df4edf08b5c6c7
 
